@@ -1,10 +1,3 @@
-    # * List indexing (some_list[index])
-    # * List indexing assignment (some_list[index] = value)
-    # * List slicing (some_list[start:end])
-    # * List slicing assignment (some_list[start:end] = another_list)
-    # * List index deletion (del some_list[index])
-    # * List slicing deletion (del some_list[start:end])
-
 """Custom implementations of several standard Python list methods.
 
 Implement your own versions of Python's standard list methods, as functions.
@@ -38,7 +31,7 @@ def custom_len(input_list):
 
     """
 
-    return 0
+    return len(input_list)
 
 
 # For the next four exercises, you'll need to be clever and think about ways
@@ -66,6 +59,9 @@ def custom_append(input_list, value):
 
     """
 
+    new_value = [input_list[-1], value]
+    input_list[-1:] = new_value
+
     pass
 
 
@@ -84,8 +80,7 @@ def custom_extend(input_list, second_list):
         True
 
     """
-
-    pass
+    input_list = input_list + second_list 
 
 
 def custom_insert(input_list, index, value):
