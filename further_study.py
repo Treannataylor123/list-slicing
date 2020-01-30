@@ -1,3 +1,10 @@
+    # * List indexing (some_list[index])
+    # * List indexing assignment (some_list[index] = value)
+    # * List slicing (some_list[start:end])
+    # * List slicing assignment (some_list[start:end] = another_list)
+    # * List index deletion (del some_list[index])
+    # * List slicing deletion (del some_list[start:end])
+
 """Custom implementations of several standard Python list methods.
 
 Implement your own versions of Python's standard list methods, as functions.
